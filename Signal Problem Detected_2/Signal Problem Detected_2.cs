@@ -21,12 +21,12 @@ if(trigger[3] == "MAIN")
 		if(trigger[2] == "SITE1")
 		{
 			setParam = "Switch Site 1";
-			swTo = "SITE2";
+			swTo = "SITEA";
 		}
 		else
 		{
 			setParam = "Switch Site 2";
-			swTo = "SITE1";
+			swTo = "SITEB";
 		}
 		Switch.SetParameter(setParam, 2);
 	}
