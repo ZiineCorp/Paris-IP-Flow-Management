@@ -32,8 +32,6 @@ if(trigger[3] == "MAIN")
 	}
 	else
 	{
-		
-	
 		Element Switch = engine.FindElement("Site Switch");
 		
 		if((trigger[2] == "SITE1" && Convert.ToString(Switch.GetParameter(300)) == "1") || (trigger[2] == "SITE2" && Convert.ToString(Switch.GetParameter(300)) == "2"))
@@ -49,8 +47,6 @@ if(trigger[3] == "MAIN")
 			else 
 			{
 				engine.GenerateInformation("Attached! As " + engine.UserDisplayName);
-				//engine.ShowProgress("Helloe");
-				//engine.ShowUI("piepeloe", true);
 				// Create the dialog box		
 				
 				if(trigger[2] == "SITE1")
