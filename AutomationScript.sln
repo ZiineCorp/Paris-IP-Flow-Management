@@ -34,6 +34,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Actions", "Actions", "{D2F6
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Signal Problem Detected_2", "Signal Problem Detected_2\Signal Problem Detected_2.csproj", "{024BC1CD-FC49-4EE2-AB1F-7D39C0B9B80C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{0D756F96-B84C-47C6-9EAF-438086085681}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scripts.UnitTests", "Scripts.UnitTests\Scripts.UnitTests.csproj", "{991BDDC4-0ECE-4C1C-9733-FBF0C2A8706E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,6 +52,10 @@ Global
 		{024BC1CD-FC49-4EE2-AB1F-7D39C0B9B80C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{024BC1CD-FC49-4EE2-AB1F-7D39C0B9B80C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{024BC1CD-FC49-4EE2-AB1F-7D39C0B9B80C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{991BDDC4-0ECE-4C1C-9733-FBF0C2A8706E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{991BDDC4-0ECE-4C1C-9733-FBF0C2A8706E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{991BDDC4-0ECE-4C1C-9733-FBF0C2A8706E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{991BDDC4-0ECE-4C1C-9733-FBF0C2A8706E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -58,6 +66,7 @@ Global
 		{26809EDF-9998-4BD7-A27A-2E2F067C5349} = {0F1C7F82-2A32-4A2F-8769-1CD9882FB082}
 		{D2F6ED7C-45DA-4900-A705-652FAA615EF3} = {26809EDF-9998-4BD7-A27A-2E2F067C5349}
 		{024BC1CD-FC49-4EE2-AB1F-7D39C0B9B80C} = {D2F6ED7C-45DA-4900-A705-652FAA615EF3}
+		{991BDDC4-0ECE-4C1C-9733-FBF0C2A8706E} = {0D756F96-B84C-47C6-9EAF-438086085681}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {325D4F6B-5A34-4C77-9970-DC2149EC0FFC}

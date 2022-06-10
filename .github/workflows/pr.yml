@@ -15,11 +15,29 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-
-      # TODO: add unit test runs here
+      
+      # Setup MSBuild
+      - name: Setup MSBuild
+        uses: microsoft/setup-msbuild@v1
+      
+      # NuGet restore
+      - name: Restore Packages
+        run: nuget restore
+      
+      # Build
+      - name: Build Solution
+        run: |
+          msbuild.exe AutomationScript.sln /p:platform="Any CPU" /p:configuration="Release"
+      
+      # Run unit tests
+      - name: Setup VSTest
+        uses: darenm/Setup-VSTest@v1
+      - name: Run Tests
+        run: vstest.console.exe **\bin\**\*.UnitTests.dll /logger:trx
+      
