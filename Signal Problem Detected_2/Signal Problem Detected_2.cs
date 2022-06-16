@@ -18,6 +18,8 @@ public class Script
 
 		string[] trigger = triggerElement.Split('_');
 
+		string _issueString = "An issue was detected with the uplink in ";
+
 
 		if (trigger[3] == "MAIN")
 		{
@@ -78,7 +80,7 @@ public class Script
 							// Add a 'StaticText' item to the dialog box
 							UIBlockDefinition blockStaticText = new UIBlockDefinition();
 							blockStaticText.Type = UIBlockType.StaticText;
-							blockStaticText.Text = "An issue was detected with the uplink in " + trigger[2] + ".\r\n\r\nCheck live signal feed from satellite downlink.\r\n\r\nDo you want to switch the uplink to the alternate site in " + swTo + " ?";
+							blockStaticText.Text = _issueString + trigger[2] + ".\r\n\r\nCheck live signal feed from satellite downlink.\r\n\r\nDo you want to switch the uplink to the alternate site in " + swTo + " ?";
 							blockStaticText.Row = 0;
 							blockStaticText.Column = 0;
 							blockStaticText.ColumnSpan = 3;
@@ -345,7 +347,7 @@ public class Script
 							// Add a 'StaticText' item to the dialog box
 							UIBlockDefinition blockStaticText = new UIBlockDefinition();
 							blockStaticText.Type = UIBlockType.StaticText;
-							blockStaticText.Text = "An issue was detected with the uplink in " + trigger[2] + ".\r\n\r\nCheck live signal feed from satellite downlink.\r\n\r\nDo you want to switch the uplink to the alternate site in " + swTo + " ?";
+							blockStaticText.Text = _issueString + trigger[2] + ".\r\n\r\nCheck live signal feed from satellite downlink.\r\n\r\nDo you want to switch the uplink to the alternate site in " + swTo + " ?";
 							blockStaticText.Row = 0;
 							blockStaticText.Column = 0;
 							blockStaticText.ColumnSpan = 3;
