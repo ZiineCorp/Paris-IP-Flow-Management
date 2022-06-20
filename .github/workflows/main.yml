@@ -57,7 +57,7 @@ jobs:
 
       - name: Skyline DataMiner Upload Action
         id: upload-step
-        uses: SkylineCommunications/Skyline-DataMiner-Deploy-Action@v1.0.2
+        uses: SkylineCommunications/Skyline-DataMiner-Deploy-Action@v1.0.3
         with:
           # Stage upload
           stage: Upload
@@ -77,7 +77,7 @@ jobs:
 
     steps:
       - name: Skyline DataMiner Deploy Action
-        uses: SkylineCommunications/Skyline-DataMiner-Deploy-Action@v1.0.2
+        uses: SkylineCommunications/Skyline-DataMiner-Deploy-Action@v1.0.3
         with:
           # Stage deploy
           stage: Deploy
@@ -107,7 +107,7 @@ jobs:
 
     steps:
       - name: Skyline DataMiner Deploy Action
-        uses: SkylineCommunications/Skyline-DataMiner-Deploy-Action@v1.0.0
+        uses: SkylineCommunications/Skyline-DataMiner-Deploy-Action@v1.0.3
         with:
           # Stage deploy
           stage: Deploy
